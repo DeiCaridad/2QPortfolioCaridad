@@ -1,39 +1,60 @@
-.video{
-    display: flex;
-    overflow: hidden;
-    width: 100vw;
-}
-
 .genContainer{
     display:flex;
     align-items:flex-start;
     gap:20px;
     flex-wrap:wrap;
     padding: 12px;
+
+    /*use for debugging/checking centeredness of elements
+    border:2px;
+    border-style: solid;
+    border-color: black;
+    */
+}
+
+.genContainer .linksCentered{
+    display:flex;
+    margin-right: auto;
+    margin-left:auto;
+    flex-wrap:wrap;
+}
+
+.genContainer .containerTop{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
 }
 
 .genContainer .container2{
+    display:flex;
+    
     width: 315px;
     height: 500px;
-    display:flex;
+
     margin-left:auto;
     justify-content:center;
     padding:7.5px;
+    flex-direction:column;
+    align-items:center;
+    background-color:whitesmoke;
+
     border: 2px;
     border-color:black;
     border-style:solid;
-    flex-direction:column;
-    align-items:center;
 }
 
-.container3{
-    width: 315px;
+.genContainer .container3{
     display:flex;
-    margin-left:auto;
-    justify-content:center;
-    align-self:start;
+    margin-right: auto;
+    margin-left: auto;
+    gap:100px;
     padding:2px;
+
+    border:2px;
+    border-style: solid;
+    border-color: black;
 }
+
 
 .containerTop{
     display:flex;
@@ -43,11 +64,27 @@
 
 .genContainer .TextBox{
     display:flex;
+    width:857px;
+    height:500px;
+
+    border:2px;
+    border-style:solid;
+    border-color: black;
 }
 
 .container2 .title{
     display:flex;
     row-gap:3px;
+}
+
+.LinkImg{
+    display:flex;
+    height:200px;
+    width:300px;
+
+    border: 2px;
+    border-style:solid;
+    border-color:black;
 }
 
 .containerTop .refer{
@@ -68,8 +105,6 @@
     justify-content: center;
     flex-grow: 1;
     height: 75px;
-    /*background-image: url('../asset/triceratops.jpg')*/
-    /*color: */
 }
 
 .gen{
