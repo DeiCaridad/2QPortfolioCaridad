@@ -45,8 +45,7 @@
 
 .genContainer .container3{
     display:flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     gap:100px;
     padding:2px;
 
@@ -72,9 +71,20 @@
     border-color: black;
 }
 
+.containerTop .refer{
+    margin-left:83%;
+    size:5px;
+}
+
 .container2 .title{
     display:flex;
     row-gap:3px;
+}
+
+.container2 .box{
+    display: flex;
+    align-items:row;
+    margin-block-end: auto;
 }
 
 .LinkImg{
@@ -85,11 +95,6 @@
     border: 2px;
     border-style:solid;
     border-color:black;
-}
-
-.containerTop .refer{
-    margin-left:83%;
-    size:5px;
 }
 
 .links{
@@ -123,12 +128,6 @@
     display: flex;
     margin-block-end: auto;
     justify-content:center;
-}
-
-.container2 .box{
-    display: flex;
-    align-items:row;
-    margin-block-end: auto;
 }
 
 .imgCaption{
