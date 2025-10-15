@@ -17,6 +17,7 @@
     margin-right: auto;
     margin-left:auto;
     flex-wrap:wrap;
+
 }
 
 .genContainer .containerTop{
@@ -66,9 +67,13 @@
     width:857px;
     height:500px;
 
+    flex-direction: column;
+
+    /* use for debugging
     border:2px;
     border-style:solid;
     border-color: black;
+    */
 }
 
 .containerTop .refer{
