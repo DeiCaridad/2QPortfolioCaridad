@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color:#0C0C0C;color:#ECDFCC;"> <!--set rgb value to 31,31,31 after finding proper design-->
+<html lang="en" style="background-color:#0C0C0C;color:#ECDFCC;"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,12 @@
     <meta name="Dei Caridad" content="#Q">
     <title>3rd Quarter 2nd Graded</title>
     <link rel="stylesheet" href="../stylesFolder/stylesQ32G.css">
-    <script src="index.js" defer></script>
+    <script src="../javascript/index.js" defer></script>
 </head>
 <body>
-    <form action="/submit-page" method="POST"> 
+    <form id="form">  
         <label for="StudentID">Student ID:</label>
-        <input type="number" id="us+erID" name="userID" required><br>
+        <input type="number" id="userID" name="userID" required><br>
 
         <label for="Name">Name:</label>
         <input type="text" id="userName" name="userName" required><br>
@@ -30,37 +30,51 @@
         <label for="Grade">Grade Level:</label>
         <select id="userGrade" name="userGrade" required>
             <option value="">Select Grade Level</option>
-            <option value="1">Grade 7</option>
-            <option value="2">Grade 8</option>
-            <option value="3">Grade 9</option>
-            <option value="4">Grade 10</option>
-            <option value="5">Grade 11</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Grade 10">Grade 10</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
         </select><br>
 
         <label for="Residence">Intern or Extern?:</label>
-        <input type="radio" id="userResidence" name="userResidence" required>Intern
-        <input type="radio" id="userResidence" name="userResidence" required>Extern
+        <input type="radio" id="userResidencex" name="userResidence" value="Intern" required>Intern
+        <input type="radio" id="userResidence" name="userResidence" value="Extern" required>Extern
         <br>
 
         <label for="Club">Preferred Club/Organization:</label>
         <select id="userClub" name="userClub" required>
             <option value="">Select Club/Organization</option>
-            <option value="1">Exposure</option>
-            <option value="2">Tomorrow</option>
-            <option value="3">Himig Agham</option>
-            <option value="4">CARE</option>
-            <option value="5">Pallastro</option>
-            <option value="6">SARS+</option>
-            <option value="7">Computron</option>
-            <option value="8">Math Club</option>
+            <option value="Aksis">Aksis</option>
+            <option value="Alianti">Alianti</option>
+            <option value="Astrosoc">Astrosoc</option>
+            <option value="Bake Club">Bake Club</option>
+            <option value="Bravura">Bravura</option>
+            <option value="Acts">Acts</option>
+            <option value="Atom">Atom</option>
+            <option value="CARE">CARE</option>
+            <option value="Ellipsis">Ellipsis</option>
+            <option value="Exposure">Exposure</option>
+            <option value="Celluloid">Celluloid</option>
+            <option value="Intyale">Intyale</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Himig Agham">Himig Agham</option>
+            <option value="CARE">CARE</option>
+            <option value="Pallastro">Pallastro</option>
+            <option value="SARS+">SARS+</option>
+            <option value="Computron">Computron</option>
+            <option value="Math Club">Math Club</option>
         </select><br>
 
         <label for="why">Why do you want to join this club/organization?</label><br>
         <textarea id="userWhy" name="userWhy" required></textarea><br>
 
         <div class="submitandreset">    
-        <input type="submit" value="Submit">
+        <input id="Submit" type="submit" value="Submit">
         <input type="reset" value="Reset">
+        <button id="viewDataBtn" onclick="viewDataPage()" type="button">View Sign Ups
+        </button>
         </div>
 
     </form>

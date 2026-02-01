@@ -1,3 +1,0 @@
-function askConfirmation(){
-    alert("a")
-}

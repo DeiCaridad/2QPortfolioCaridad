@@ -24,3 +24,32 @@ textarea{
 .submitandreset{
     margin-top:3vw;
 }
+
+th{
+    background-color:#121212;
+    color:#e7e5e2;
+    padding:1vw 2vw 1vw 2vw;
+}
+
+table{
+    margin-top:3vw;
+    border-collapse:collapse;
+    justify-self:center;
+    border:3px;
+    border-color:aliceblue
+}
+
+tbody{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+    margin-top:.5vw;
+    font-size: 2vw;
+}
+
+td{
+    border:2px solid #121212;
+    padding:1vw 2vw 1vw 2vw;
+}
