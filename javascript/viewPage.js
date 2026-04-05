@@ -33,6 +33,10 @@ else{
       student => student.studentClub === sortOption
     );
     displayData(filtered);
+
+    if (filtered.length === 0) {
+      displayDiv.innerHTML = "<tr><td colspan='9'>No data found for the selected club.</td></tr>";
+    }
   }
 }
 

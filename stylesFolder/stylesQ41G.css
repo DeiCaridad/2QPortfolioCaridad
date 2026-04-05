@@ -1,0 +1,61 @@
+*{
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 340;
+  font-style: normal;
+}
+
+.title{
+    justify-self:center;
+    margin-top:6vw;
+    font-weight:bold;
+}
+.mainArea{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /*https://getcssscan.com/css-box-shadow-examples*/
+    border-radius:10px;
+    padding:30px;
+    width:500px;
+    height:min-content;
+    justify-self:center;
+    margin-top:2vw;
+}
+
+.merriweather-sans-title{
+    font-size:18px;
+    font-weight:520;
+}
+
+.input{
+    height:30px;
+    width:100%;
+    border-radius:5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    width:400px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.submit-button:hover{
+    background-color: #45a049;
+}
+
+.movieRating{
+    background-color:rgb(243, 243, 243);
+    border-radius:5px;
+    border-color:#eaee00;
+    border:1px;
+    border-style:solid;
+    padding:0 0 0 1vw;  
+    height:30px;
+    align-content:center;
+}
+

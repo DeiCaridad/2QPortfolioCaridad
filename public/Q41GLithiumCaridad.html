@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q4 1st Graded</title>
+    <link rel="stylesheet" href="../stylesFolder/stylesQ41G.css">
+    <script src="../javascript/Q41GLithiumCaridad.js" defer></script>
+  </head>
+  <body>
+    <div class="mainArea">
+      <h1 class="title">Add a movie</h1>
+      <form id="form">
+        <label for="title" class="merriweather-sans-title">Movie Title:</label><br>
+        <input type="text" id="movieTitle" name="movieTitle" class="input" required><br><br>
+        
+        <label for="year" class="merriweather-sans-title">Year:</label><br>
+        <input type="text" id="movieYear" name="movieYear" class="input" required><br><br>
+        
+        <label for="genre" class="merriweather-sans-title">Movie Genre:</label><br>
+        <select id="movieGenre" name="movieGenre" class="input" style="height:30px;" required>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="thriller">Thriller</option>
+          <option value="romance">Romance</option>
+          <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="rating" class="merriweather-sans-title">Movie Rating:</label><br>
+        <input type="radio" id="rating" name="movieRating" value="1" required>1
+        <input type="radio" id="rating" name="movieRating" value="2" required>2
+        <input type="radio" id="rating" name="movieRating" value="3" required>3
+        <input type="radio" id="rating" name="movieRating" value="4" required>4
+        <input type="radio" id="rating" name="movieRating" value="5" required>5<br>
+
+
+        <br>
+        <input type="submit" value="Add Movie" class="submit-button">
+      </form>
+
+      <h1 class="title">Movie List</h1>
+      <div id="movieList" >
+
+      </div>
+    </div>
+  </body>
+</html>
